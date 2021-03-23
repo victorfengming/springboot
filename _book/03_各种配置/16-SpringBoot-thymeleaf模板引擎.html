@@ -1,0 +1,1089 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>thymeleaf模板引擎 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="17-SpringBoot-Thymeleaf语法.html" />
+    
+    
+    <link rel="prev" href="15-SpringBoot-首页和图标定制.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../img/avator.png.icon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../img/avator.png.icon.ico' type="image/x-icon">
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    前期准备
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../01_前期准备/01-SpringBoot-如何学.html">
+            
+                <a href="../01_前期准备/01-SpringBoot-如何学.html">
+            
+                    
+                    如何学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../01_前期准备/02-SpringBoot-是什么.html">
+            
+                <a href="../01_前期准备/02-SpringBoot-是什么.html">
+            
+                    
+                    是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../01_前期准备/03-SpringBoot-第一个应用.html">
+            
+                <a href="../01_前期准备/03-SpringBoot-第一个应用.html">
+            
+                    
+                    第一个应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../01_前期准备/04-SpringBoot-helloworld程序.html">
+            
+                <a href="../01_前期准备/04-SpringBoot-helloworld程序.html">
+            
+                    
+                    helloworld程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../01_前期准备/05-SpringBoot-IDEA创建彩蛋.html">
+            
+                <a href="../01_前期准备/05-SpringBoot-IDEA创建彩蛋.html">
+            
+                    
+                    IDEA创建彩蛋
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    基础原理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../02_基础原理/06-SpringBoot-自动装配原理.html">
+            
+                <a href="../02_基础原理/06-SpringBoot-自动装配原理.html">
+            
+                    
+                    自动装配原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../02_基础原理/07-SpringBoot-主启动类怎么运行.html">
+            
+                <a href="../02_基础原理/07-SpringBoot-主启动类怎么运行.html">
+            
+                    
+                    主启动类怎么运行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../02_基础原理/08-SpringBoot-yaml语法.html">
+            
+                <a href="../02_基础原理/08-SpringBoot-yaml语法.html">
+            
+                    
+                    yaml语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../02_基础原理/09-SpringBoot-给属性赋值的几种方式.html">
+            
+                <a href="../02_基础原理/09-SpringBoot-给属性赋值的几种方式.html">
+            
+                    
+                    给属性赋值的几种方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../02_基础原理/10-SpringBoot-JSR303校验.html">
+            
+                <a href="../02_基础原理/10-SpringBoot-JSR303校验.html">
+            
+                    
+                    JSR303校验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    各种配置
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="11-SpringBoot-多环境配置文件位置.html">
+            
+                <a href="11-SpringBoot-多环境配置文件位置.html">
+            
+                    
+                    多环境配置文件位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="12-SpringBoot-自动配置原理再理解.html">
+            
+                <a href="12-SpringBoot-自动配置原理再理解.html">
+            
+                    
+                    自动配置原理再理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="13-SpringBoot-web开发探究.html">
+            
+                <a href="13-SpringBoot-web开发探究.html">
+            
+                    
+                    web开发探究
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="14-SpringBoot-静态资源导入探究.html">
+            
+                <a href="14-SpringBoot-静态资源导入探究.html">
+            
+                    
+                    静态资源导入探究
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="15-SpringBoot-首页和图标定制.html">
+            
+                <a href="15-SpringBoot-首页和图标定制.html">
+            
+                    
+                    首页和图标定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.6" data-path="16-SpringBoot-thymeleaf模板引擎.html">
+            
+                <a href="16-SpringBoot-thymeleaf模板引擎.html">
+            
+                    
+                    thymeleaf模板引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="17-SpringBoot-Thymeleaf语法.html">
+            
+                <a href="17-SpringBoot-Thymeleaf语法.html">
+            
+                    
+                    Thymeleaf语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="18-SpringBoot-MVC配置原理.html">
+            
+                <a href="18-SpringBoot-MVC配置原理.html">
+            
+                    
+                    MVC配置原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="19-SpringBoot-扩展MVC.html">
+            
+                <a href="19-SpringBoot-扩展MVC.html">
+            
+                    
+                    扩展MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    员工管理系统
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../04_员工管理系统/20-SpringBoot-员工管理系统-首页实现.html">
+            
+                <a href="../04_员工管理系统/20-SpringBoot-员工管理系统-首页实现.html">
+            
+                    
+                    首页实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../04_员工管理系统/21-SpringBoot-员工管理系统-首页实现.html">
+            
+                <a href="../04_员工管理系统/21-SpringBoot-员工管理系统-首页实现.html">
+            
+                    
+                    首页实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../04_员工管理系统/22-SpringBoot-员工管理系统-国际化.html">
+            
+                <a href="../04_员工管理系统/22-SpringBoot-员工管理系统-国际化.html">
+            
+                    
+                    国际化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../04_员工管理系统/23-SpringBoot-员工管理系统-登录功能实现.html">
+            
+                <a href="../04_员工管理系统/23-SpringBoot-员工管理系统-登录功能实现.html">
+            
+                    
+                    登录功能实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../04_员工管理系统/24-SpringBoot-员工管理系统-登录拦截器.html">
+            
+                <a href="../04_员工管理系统/24-SpringBoot-员工管理系统-登录拦截器.html">
+            
+                    
+                    登录拦截器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../04_员工管理系统/25-SpringBoot-员工管理系统-展示员工列表.html">
+            
+                <a href="../04_员工管理系统/25-SpringBoot-员工管理系统-展示员工列表.html">
+            
+                    
+                    展示员工列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../04_员工管理系统/26-SpringBoot-员工管理系统-增加员工实现.html">
+            
+                <a href="../04_员工管理系统/26-SpringBoot-员工管理系统-增加员工实现.html">
+            
+                    
+                    增加员工实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../04_员工管理系统/27-SpringBoot-员工管理系统-修改员工信息.html">
+            
+                <a href="../04_员工管理系统/27-SpringBoot-员工管理系统-修改员工信息.html">
+            
+                    
+                    修改员工信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../04_员工管理系统/28-SpringBoot-员工管理系统-删除及404处理.html">
+            
+                <a href="../04_员工管理系统/28-SpringBoot-员工管理系统-删除及404处理.html">
+            
+                    
+                    删除及404处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    回顾以及拓展
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../05_回顾以及拓展/29-SpringBoot-聊聊该如何写一个网站.html">
+            
+                <a href="../05_回顾以及拓展/29-SpringBoot-聊聊该如何写一个网站.html">
+            
+                    
+                    聊聊该如何写一个网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../05_回顾以及拓展/30-SpringBoot-回顾这周安排.html">
+            
+                <a href="../05_回顾以及拓展/30-SpringBoot-回顾这周安排.html">
+            
+                    
+                    回顾这周安排
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../05_回顾以及拓展/31-SpringBoot-整合JDBC使用.html">
+            
+                <a href="../05_回顾以及拓展/31-SpringBoot-整合JDBC使用.html">
+            
+                    
+                    整合JDBC使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../05_回顾以及拓展/32-SpringBoot-整合Druid数据源.html">
+            
+                <a href="../05_回顾以及拓展/32-SpringBoot-整合Druid数据源.html">
+            
+                    
+                    整合Druid数据源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../05_回顾以及拓展/33-SpringBoot-整合mybatis框架.html">
+            
+                <a href="../05_回顾以及拓展/33-SpringBoot-整合mybatis框架.html">
+            
+                    
+                    整合mybatis框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../05_回顾以及拓展/34-SpringBoot-SpringSecurity环境搭建.html">
+            
+                <a href="../05_回顾以及拓展/34-SpringBoot-SpringSecurity环境搭建.html">
+            
+                    
+                    SpringSecurity环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../05_回顾以及拓展/35-SpringBoot-用户认证和授权.html">
+            
+                <a href="../05_回顾以及拓展/35-SpringBoot-用户认证和授权.html">
+            
+                    
+                    用户认证和授权
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../05_回顾以及拓展/36-SpringBoot-注销及权限控制.html">
+            
+                <a href="../05_回顾以及拓展/36-SpringBoot-注销及权限控制.html">
+            
+                    
+                    注销及权限控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../05_回顾以及拓展/37-SpringBoot-记住我及首页定制.html">
+            
+                <a href="../05_回顾以及拓展/37-SpringBoot-记住我及首页定制.html">
+            
+                    
+                    记住我及首页定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../05_回顾以及拓展/38-SpringBoot-Shiro快速开始.html">
+            
+                <a href="../05_回顾以及拓展/38-SpringBoot-Shiro快速开始.html">
+            
+                    
+                    Shiro快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../05_回顾以及拓展/39-SpringBoot-Shiro的subject分析.html">
+            
+                <a href="../05_回顾以及拓展/39-SpringBoot-Shiro的subject分析.html">
+            
+                    
+                    Shiro的subject分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../05_回顾以及拓展/40-SpringBoot-SpringBoot整合Shiro环境搭建.html">
+            
+                <a href="../05_回顾以及拓展/40-SpringBoot-SpringBoot整合Shiro环境搭建.html">
+            
+                    
+                    SpringBoot整合Shiro环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="../05_回顾以及拓展/41-SpringBoot-Shiro实现登录拦截.html">
+            
+                <a href="../05_回顾以及拓展/41-SpringBoot-Shiro实现登录拦截.html">
+            
+                    
+                    Shiro实现登录拦截
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="../05_回顾以及拓展/42-SpringBoot-Shiro实现用户登录.html">
+            
+                <a href="../05_回顾以及拓展/42-SpringBoot-Shiro实现用户登录.html">
+            
+                    
+                    Shiro实现用户登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="../05_回顾以及拓展/43-SpringBoot-Shiro整合mybatis.html">
+            
+                <a href="../05_回顾以及拓展/43-SpringBoot-Shiro整合mybatis.html">
+            
+                    
+                    Shiro整合mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="../05_回顾以及拓展/44-SpringBoot-Shiro请求授权实现.html">
+            
+                <a href="../05_回顾以及拓展/44-SpringBoot-Shiro请求授权实现.html">
+            
+                    
+                    Shiro请求授权实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="../05_回顾以及拓展/61-SpringBoot-聊聊现在和未来.html">
+            
+                <a href="../05_回顾以及拓展/61-SpringBoot-聊聊现在和未来.html">
+            
+                    
+                    聊聊现在和未来
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >thymeleaf模板引擎</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><p><a href="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596701201161.png" data-lightbox="05c191a2-6b82-45d7-9c24-ad7e2db89745" data-title="1596701201161"><img src="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596701201161.png" alt="1596701201161"></a></p>
+<p>&#x6A21;&#x677F;&#x5F15;&#x64CE;&#x6211;&#x4EEC;&#x4EE5;&#x524D;&#x662F;JSP</p>
+<p><a href="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596699798741.png" data-lightbox="a6866522-56d9-4fde-afa2-edf40f7891b8" data-title="1596699798741"><img src="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596699798741.png" alt="1596699798741"></a></p>
+<h3 id="&#x5148;&#x5BFC;&#x5165;thymeleaf"><a name="&#x5148;&#x5BFC;&#x5165;thymeleaf" class="anchor-navigation-ex-anchor" href="#&#x5148;&#x5BFC;&#x5165;thymeleaf"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5148;&#x5BFC;&#x5165;thymeleaf</h3>
+<p><a href="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596699904496.png" data-lightbox="1e524f47-9d96-4431-b9b7-6c8ad8825419" data-title="1596699904496"><img src="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596699904496.png" alt="1596699904496"></a></p>
+<pre><code class="lang-xml">        <span class="hljs-comment">&lt;!--thymeleaf--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.thymeleaf<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>thymeleaf-spring5<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.thymeleaf.extras<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>thymeleaf-extras-java8time<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<p>&#x7136;&#x540E;</p>
+<p>&#x5728;&#x9875;&#x9762;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;html&#x6587;&#x4EF6;</p>
+<p><a href="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596701046411.png" data-lightbox="bb526081-7a32-418b-87ec-628d0e9ef7ee" data-title="1596701046411"><img src="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596701046411.png" alt="1596701046411"></a></p>
+<p>&#x7F16;&#x8F91;test.html</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span>
+          <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;ie=edge&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x7528;&#x4E8E;&#x6D4B;&#x8BD5;&#x6B64;&#x4E8B;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#x5728;Controller&#x4E2D;&#x914D;&#x7F6E;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.kuang.controller;
+
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Controller;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;
+
+<span class="hljs-comment">/**
+ * <span class="hljs-doctag">@author</span> victor
+ * <span class="hljs-doctag">@site</span> https://victorfengming.github.io/
+ * <span class="hljs-doctag">@company</span> XDL
+ * <span class="hljs-doctag">@project</span> springboot-03-web
+ * <span class="hljs-doctag">@package</span> com.kuang.controller
+ * <span class="hljs-doctag">@created</span> 2020-08-06 15:29
+ * <span class="hljs-doctag">@function</span> &quot;&quot;
+ */</span>
+<span class="hljs-comment">// &#x5728;Templates&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x9875;&#x9762;&#x8FD9;&#x80FD;&#x901A;&#x8FC7;Controller&#x6765;&#x8DF3;&#x8F6C;!</span>
+<span class="hljs-comment">// &#x8FD9;&#x4E2A;&#x9700;&#x8981;&#x6A21;&#x677F;&#x5F15;&#x64CE;&#x7684;&#x652F;&#x6301; thymeleaf</span>
+
+<span class="hljs-meta">@Controller</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IndexController</span> </span>{
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/test&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">test</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;test&quot;</span>;
+    }
+}
+</code></pre>
+<p>&#x5728;&#x8FD4;&#x56DE;&#x7684;&quot;test&quot;,&#x7136;&#x540E;thymeleaf&#x4F1A;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x89C4;&#x5219;&#x8FDB;&#x884C;&#x5339;&#x914D;</p>
+<p><a href="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596701261232.png" data-lightbox="8f288fb8-b975-4219-8f63-d258faf01747" data-title="1596701261232"><img src="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596701261232.png" alt="1596701261232"></a></p>
+<p>&#x7136;&#x540E;&#x5C31;&#x627E;&#x5230;&#x9875;&#x9762;&#x4E86;</p>
+<p><a href="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596701331619.png" data-lightbox="7cc6a206-16b7-4f34-a003-2cc4c9c2f5ee" data-title="1596701331619"><img src="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596701331619.png" alt="1596701331619"></a></p>
+<p>&#x91CD;&#x65B0;&#x542F;&#x52A8;</p>
+<p><a href="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596701350513.png" data-lightbox="472daf7f-6d73-4dbf-a80e-b71d9e13b75c" data-title="1596701350513"><img src="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596701350513.png" alt="1596701350513"></a></p>
+<p>&#x5728;&#x770B;&#x9875;&#x9762;</p>
+<p><a href="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596701372469.png" data-lightbox="51f59b94-4130-4321-845e-cbfa2379d549" data-title="1596701372469"><img src="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596701372469.png" alt="1596701372469"></a></p>
+<p>&#x5C31;&#x6210;&#x4E86;</p>
+<hr>
+<h3 id="&#x6A21;&#x677F;&#x5F15;&#x64CE;"><a name="&#x6A21;&#x677F;&#x5F15;&#x64CE;" class="anchor-navigation-ex-anchor" href="#&#x6A21;&#x677F;&#x5F15;&#x64CE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6A21;&#x677F;&#x5F15;&#x64CE;</h3>
+<p>&#x7ED3;&#x8BBA;: &#x53EA;&#x9700;&#x8981;&#x4F7F;&#x7528;thymeleaf,&#x53EA;&#x9700;&#x8981;&#x5BFC;&#x5165;&#x5BF9;&#x5E94;&#x7684;&#x4F9D;&#x8D56;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;!</p>
+<p>&#x6211;&#x4EEC;&#x5C06;html&#x9875;&#x9762;&#x653E;&#x5728;&#x6211;&#x4EEC;&#x7684;Template&#x76EE;&#x5F55;&#x4E0B;&#x5373;&#x53EF;</p>
+<p><a href="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596701466727.png" data-lightbox="8b0f38fa-fe1b-43d2-b1c1-39f95501aa44" data-title="1596701466727"><img src="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596701466727.png" alt="1596701466727"></a></p>
+<p>&#x8BED;&#x6CD5;</p>
+<p>&#x5224;&#x65AD;</p>
+<p>&#x663E;&#x793A;</p>
+<p>&#x53D6;&#x503C;</p>
+<h3 id="&#x9996;&#x5148;&#x60F3;&#x8981;&#x4F7F;&#x7528;&#x9700;&#x8981;&#x5BFC;&#x5165;&#x4E00;&#x4E2A;&#x7EA6;&#x675F;"><a name="&#x9996;&#x5148;&#x60F3;&#x8981;&#x4F7F;&#x7528;&#x9700;&#x8981;&#x5BFC;&#x5165;&#x4E00;&#x4E2A;&#x7EA6;&#x675F;" class="anchor-navigation-ex-anchor" href="#&#x9996;&#x5148;&#x60F3;&#x8981;&#x4F7F;&#x7528;&#x9700;&#x8981;&#x5BFC;&#x5165;&#x4E00;&#x4E2A;&#x7EA6;&#x675F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9996;&#x5148;&#x60F3;&#x8981;&#x4F7F;&#x7528;,&#x9700;&#x8981;&#x5BFC;&#x5165;&#x4E00;&#x4E2A;&#x7EA6;&#x675F;</h3>
+<p><a href="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596701524414.png" data-lightbox="dc26eaf2-eb30-46a0-a05f-5464d6929f9f" data-title="1596701524414"><img src="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596701524414.png" alt="1596701524414"></a></p>
+<p>&#x6211;&#x4EEC;&#x6765;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x8BD5;&#x8BD5;</p>
+<blockquote>
+<p>&#x65E9;&#x671F;&#x6CA1;&#x4EBA;&#x6559;&#x7684;&#x65F6;&#x5019;,&#x90FD;&#x662F;&#x770B;&#x6E90;&#x7801;&#x5B66;&#x4E60;&#x7684;</p>
+</blockquote>
+<p>1&#x5728;Controller&#x91CC;&#x9762;&#x8FD9;&#x6837;&#x5199;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.kuang.controller;
+
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Controller;
+<span class="hljs-keyword">import</span> org.springframework.ui.Model;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;
+
+<span class="hljs-comment">/**
+ * <span class="hljs-doctag">@author</span> victor
+ * <span class="hljs-doctag">@site</span> https://victorfengming.github.io/
+ * <span class="hljs-doctag">@company</span> XDL
+ * <span class="hljs-doctag">@project</span> springboot-03-web
+ * <span class="hljs-doctag">@package</span> com.kuang.controller
+ * <span class="hljs-doctag">@created</span> 2020-08-06 15:29
+ * <span class="hljs-doctag">@function</span> &quot;&quot;
+ */</span>
+<span class="hljs-comment">// &#x5728;Templates&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x9875;&#x9762;&#x8FD9;&#x80FD;&#x901A;&#x8FC7;Controller&#x6765;&#x8DF3;&#x8F6C;!</span>
+<span class="hljs-comment">// &#x8FD9;&#x4E2A;&#x9700;&#x8981;&#x6A21;&#x677F;&#x5F15;&#x64CE;&#x7684;&#x652F;&#x6301; thymeleaf</span>
+
+<span class="hljs-meta">@Controller</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IndexController</span> </span>{
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/test&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">test</span><span class="hljs-params">(Model model)</span> </span>{
+        model.addAttribute(<span class="hljs-string">&quot;msg&quot;</span>, <span class="hljs-string">&quot;hello,springboot&quot;</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;test&quot;</span>;
+    }
+}
+</code></pre>
+<p>2&#x5728;test.html&#x4E2D;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span> <span class="hljs-attr">xmlns:th</span>=<span class="hljs-string">&quot;http://www.thymeleaf.org&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span>
+          <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;ie=edge&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-comment">&lt;!--&#x6240;&#x6709;&#x7684;html&#x5143;&#x7D20;&#x90FD;&#x53EF;&#x4EE5;&#x88AB;thymeleaf&#x66FF;&#x6362;&#x63A5;&#x7BA1;--&gt;</span>
+<span class="hljs-comment">&lt;!--           th:&#x5143;&#x7D20;&#x540D;               --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">th:text</span>=<span class="hljs-string">&quot;${msg}&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>3&#x5728;&#x9875;&#x9762;&#x4E2D;&#x5EB7;&#x5EB7;</p>
+<p><a href="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596702099464.png" data-lightbox="a26c5bf2-05b5-4431-b5c0-dbd2e1c60286" data-title="1596702099464"><img src="16-SpringBoot-thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.assets/1596702099464.png" alt="1596702099464"></a></p>
+</body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="15-SpringBoot-首页和图标定制.html" class="navigation navigation-prev " aria-label="Previous page: 首页和图标定制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="17-SpringBoot-Thymeleaf语法.html" class="navigation navigation-next " aria-label="Next page: Thymeleaf语法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"thymeleaf模板引擎","level":"1.4.6","depth":2,"next":{"title":"Thymeleaf语法","level":"1.4.7","depth":2,"path":"03_各种配置/17-SpringBoot-Thymeleaf语法.md","ref":"03_各种配置/17-SpringBoot-Thymeleaf语法.md","articles":[]},"previous":{"title":"首页和图标定制","level":"1.4.5","depth":2,"path":"03_各种配置/15-SpringBoot-首页和图标定制.md","ref":"03_各种配置/15-SpringBoot-首页和图标定制.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hide-element","chapter-fold","expandable-chapters","favicon","lightbox","splitter","-lunr","pageview-count","ancre-navigation"],"pluginsConfig":{"chapter-fold":{},"splitter":{},"search":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/avator.png.icon.ico","bookmark":"./img/avator.png.icon.ico"},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"03_各种配置/16-SpringBoot-thymeleaf模板引擎.md","mtime":"2020-08-06T11:11:16.338Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-23T12:21:59.784Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

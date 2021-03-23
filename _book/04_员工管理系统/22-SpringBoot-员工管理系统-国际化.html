@@ -1,0 +1,981 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>国际化 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="23-SpringBoot-员工管理系统-登录功能实现.html" />
+    
+    
+    <link rel="prev" href="21-SpringBoot-员工管理系统-首页实现.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../img/avator.png.icon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../img/avator.png.icon.ico' type="image/x-icon">
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    前期准备
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../01_前期准备/01-SpringBoot-如何学.html">
+            
+                <a href="../01_前期准备/01-SpringBoot-如何学.html">
+            
+                    
+                    如何学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../01_前期准备/02-SpringBoot-是什么.html">
+            
+                <a href="../01_前期准备/02-SpringBoot-是什么.html">
+            
+                    
+                    是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../01_前期准备/03-SpringBoot-第一个应用.html">
+            
+                <a href="../01_前期准备/03-SpringBoot-第一个应用.html">
+            
+                    
+                    第一个应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../01_前期准备/04-SpringBoot-helloworld程序.html">
+            
+                <a href="../01_前期准备/04-SpringBoot-helloworld程序.html">
+            
+                    
+                    helloworld程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../01_前期准备/05-SpringBoot-IDEA创建彩蛋.html">
+            
+                <a href="../01_前期准备/05-SpringBoot-IDEA创建彩蛋.html">
+            
+                    
+                    IDEA创建彩蛋
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    基础原理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../02_基础原理/06-SpringBoot-自动装配原理.html">
+            
+                <a href="../02_基础原理/06-SpringBoot-自动装配原理.html">
+            
+                    
+                    自动装配原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../02_基础原理/07-SpringBoot-主启动类怎么运行.html">
+            
+                <a href="../02_基础原理/07-SpringBoot-主启动类怎么运行.html">
+            
+                    
+                    主启动类怎么运行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../02_基础原理/08-SpringBoot-yaml语法.html">
+            
+                <a href="../02_基础原理/08-SpringBoot-yaml语法.html">
+            
+                    
+                    yaml语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../02_基础原理/09-SpringBoot-给属性赋值的几种方式.html">
+            
+                <a href="../02_基础原理/09-SpringBoot-给属性赋值的几种方式.html">
+            
+                    
+                    给属性赋值的几种方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../02_基础原理/10-SpringBoot-JSR303校验.html">
+            
+                <a href="../02_基础原理/10-SpringBoot-JSR303校验.html">
+            
+                    
+                    JSR303校验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    各种配置
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../03_各种配置/11-SpringBoot-多环境配置文件位置.html">
+            
+                <a href="../03_各种配置/11-SpringBoot-多环境配置文件位置.html">
+            
+                    
+                    多环境配置文件位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../03_各种配置/12-SpringBoot-自动配置原理再理解.html">
+            
+                <a href="../03_各种配置/12-SpringBoot-自动配置原理再理解.html">
+            
+                    
+                    自动配置原理再理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../03_各种配置/13-SpringBoot-web开发探究.html">
+            
+                <a href="../03_各种配置/13-SpringBoot-web开发探究.html">
+            
+                    
+                    web开发探究
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../03_各种配置/14-SpringBoot-静态资源导入探究.html">
+            
+                <a href="../03_各种配置/14-SpringBoot-静态资源导入探究.html">
+            
+                    
+                    静态资源导入探究
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../03_各种配置/15-SpringBoot-首页和图标定制.html">
+            
+                <a href="../03_各种配置/15-SpringBoot-首页和图标定制.html">
+            
+                    
+                    首页和图标定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../03_各种配置/16-SpringBoot-thymeleaf模板引擎.html">
+            
+                <a href="../03_各种配置/16-SpringBoot-thymeleaf模板引擎.html">
+            
+                    
+                    thymeleaf模板引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../03_各种配置/17-SpringBoot-Thymeleaf语法.html">
+            
+                <a href="../03_各种配置/17-SpringBoot-Thymeleaf语法.html">
+            
+                    
+                    Thymeleaf语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../03_各种配置/18-SpringBoot-MVC配置原理.html">
+            
+                <a href="../03_各种配置/18-SpringBoot-MVC配置原理.html">
+            
+                    
+                    MVC配置原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../03_各种配置/19-SpringBoot-扩展MVC.html">
+            
+                <a href="../03_各种配置/19-SpringBoot-扩展MVC.html">
+            
+                    
+                    扩展MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    员工管理系统
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="20-SpringBoot-员工管理系统-首页实现.html">
+            
+                <a href="20-SpringBoot-员工管理系统-首页实现.html">
+            
+                    
+                    首页实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="21-SpringBoot-员工管理系统-首页实现.html">
+            
+                <a href="21-SpringBoot-员工管理系统-首页实现.html">
+            
+                    
+                    首页实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="22-SpringBoot-员工管理系统-国际化.html">
+            
+                <a href="22-SpringBoot-员工管理系统-国际化.html">
+            
+                    
+                    国际化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="23-SpringBoot-员工管理系统-登录功能实现.html">
+            
+                <a href="23-SpringBoot-员工管理系统-登录功能实现.html">
+            
+                    
+                    登录功能实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="24-SpringBoot-员工管理系统-登录拦截器.html">
+            
+                <a href="24-SpringBoot-员工管理系统-登录拦截器.html">
+            
+                    
+                    登录拦截器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="25-SpringBoot-员工管理系统-展示员工列表.html">
+            
+                <a href="25-SpringBoot-员工管理系统-展示员工列表.html">
+            
+                    
+                    展示员工列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="26-SpringBoot-员工管理系统-增加员工实现.html">
+            
+                <a href="26-SpringBoot-员工管理系统-增加员工实现.html">
+            
+                    
+                    增加员工实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="27-SpringBoot-员工管理系统-修改员工信息.html">
+            
+                <a href="27-SpringBoot-员工管理系统-修改员工信息.html">
+            
+                    
+                    修改员工信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="28-SpringBoot-员工管理系统-删除及404处理.html">
+            
+                <a href="28-SpringBoot-员工管理系统-删除及404处理.html">
+            
+                    
+                    删除及404处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    回顾以及拓展
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../05_回顾以及拓展/29-SpringBoot-聊聊该如何写一个网站.html">
+            
+                <a href="../05_回顾以及拓展/29-SpringBoot-聊聊该如何写一个网站.html">
+            
+                    
+                    聊聊该如何写一个网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../05_回顾以及拓展/30-SpringBoot-回顾这周安排.html">
+            
+                <a href="../05_回顾以及拓展/30-SpringBoot-回顾这周安排.html">
+            
+                    
+                    回顾这周安排
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../05_回顾以及拓展/31-SpringBoot-整合JDBC使用.html">
+            
+                <a href="../05_回顾以及拓展/31-SpringBoot-整合JDBC使用.html">
+            
+                    
+                    整合JDBC使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../05_回顾以及拓展/32-SpringBoot-整合Druid数据源.html">
+            
+                <a href="../05_回顾以及拓展/32-SpringBoot-整合Druid数据源.html">
+            
+                    
+                    整合Druid数据源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../05_回顾以及拓展/33-SpringBoot-整合mybatis框架.html">
+            
+                <a href="../05_回顾以及拓展/33-SpringBoot-整合mybatis框架.html">
+            
+                    
+                    整合mybatis框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../05_回顾以及拓展/34-SpringBoot-SpringSecurity环境搭建.html">
+            
+                <a href="../05_回顾以及拓展/34-SpringBoot-SpringSecurity环境搭建.html">
+            
+                    
+                    SpringSecurity环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../05_回顾以及拓展/35-SpringBoot-用户认证和授权.html">
+            
+                <a href="../05_回顾以及拓展/35-SpringBoot-用户认证和授权.html">
+            
+                    
+                    用户认证和授权
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../05_回顾以及拓展/36-SpringBoot-注销及权限控制.html">
+            
+                <a href="../05_回顾以及拓展/36-SpringBoot-注销及权限控制.html">
+            
+                    
+                    注销及权限控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../05_回顾以及拓展/37-SpringBoot-记住我及首页定制.html">
+            
+                <a href="../05_回顾以及拓展/37-SpringBoot-记住我及首页定制.html">
+            
+                    
+                    记住我及首页定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../05_回顾以及拓展/38-SpringBoot-Shiro快速开始.html">
+            
+                <a href="../05_回顾以及拓展/38-SpringBoot-Shiro快速开始.html">
+            
+                    
+                    Shiro快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../05_回顾以及拓展/39-SpringBoot-Shiro的subject分析.html">
+            
+                <a href="../05_回顾以及拓展/39-SpringBoot-Shiro的subject分析.html">
+            
+                    
+                    Shiro的subject分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../05_回顾以及拓展/40-SpringBoot-SpringBoot整合Shiro环境搭建.html">
+            
+                <a href="../05_回顾以及拓展/40-SpringBoot-SpringBoot整合Shiro环境搭建.html">
+            
+                    
+                    SpringBoot整合Shiro环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="../05_回顾以及拓展/41-SpringBoot-Shiro实现登录拦截.html">
+            
+                <a href="../05_回顾以及拓展/41-SpringBoot-Shiro实现登录拦截.html">
+            
+                    
+                    Shiro实现登录拦截
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="../05_回顾以及拓展/42-SpringBoot-Shiro实现用户登录.html">
+            
+                <a href="../05_回顾以及拓展/42-SpringBoot-Shiro实现用户登录.html">
+            
+                    
+                    Shiro实现用户登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="../05_回顾以及拓展/43-SpringBoot-Shiro整合mybatis.html">
+            
+                <a href="../05_回顾以及拓展/43-SpringBoot-Shiro整合mybatis.html">
+            
+                    
+                    Shiro整合mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="../05_回顾以及拓展/44-SpringBoot-Shiro请求授权实现.html">
+            
+                <a href="../05_回顾以及拓展/44-SpringBoot-Shiro请求授权实现.html">
+            
+                    
+                    Shiro请求授权实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="../05_回顾以及拓展/61-SpringBoot-聊聊现在和未来.html">
+            
+                <a href="../05_回顾以及拓展/61-SpringBoot-聊聊现在和未来.html">
+            
+                    
+                    聊聊现在和未来
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >国际化</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><ol>
+<li><p>&#x9996;&#x9875;&#x914D;&#x7F6E;:</p>
+<ol>
+<li>&#x6CE8;&#x610F;&#x70B9;,&#x6240;&#x6709;&#x9875;&#x9762;&#x7684;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x90FD;&#x9700;&#x8981;&#x4F7F;&#x7528;Thymeleaf&#x63A5;&#x7BA1;;</li>
+<li>@{}</li>
+</ol>
+</li>
+<li><p>&#x9875;&#x9762;&#x56FD;&#x9645;&#x5316;</p>
+<p>&#x6CE8;&#x610F;&#x70B9;: </p>
+<ol>
+<li>&#x6211;&#x4EEC;&#x9700;&#x8981;&#x914D;&#x7F6E;i18n&#x6587;&#x4EF6;</li>
+<li>&#x5982;&#x679C;&#x9700;&#x8981;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x8FDB;&#x884C;&#x81EA;&#x52A8;&#x6309;&#x94AE;&#x81EA;&#x52A8;&#x5207;&#x6362;,&#x6211;&#x4EEC;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x56FD;&#x9645;&#x5316;&#x7684;&#x7EC4;&#x4EF6;</li>
+<li>&#x8BB0;&#x5F97;&#x5C06;&#x81EA;&#x5DF1;&#x5199;&#x7684;&#x7EC4;&#x4EF6;&#x914D;&#x7F6E;&#x5230;spring&#x5BB9;&#x5668;&#x4E2D;<code>@Bean</code></li>
+<li><h1 id="">{}</h1>
+</li>
+</ol>
+</li>
+</ol>
+<p><a href="22-SpringBoot-%E5%91%98%E5%B7%A5%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%9B%BD%E9%99%85%E5%8C%96.assets/1596764270958.png" data-lightbox="b0faaed7-f02c-4ac2-ad5c-2517771b8de6" data-title="1596764270958"><img src="22-SpringBoot-%E5%91%98%E5%B7%A5%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%9B%BD%E9%99%85%E5%8C%96.assets/1596764270958.png" alt="1596764270958"></a></p>
+<p><a href="22-SpringBoot-%E5%91%98%E5%B7%A5%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%9B%BD%E9%99%85%E5%8C%96.assets/1596764324799.png" data-lightbox="41159717-1d37-40b9-8e78-0d5777fd5309" data-title="1596764324799"><img src="22-SpringBoot-%E5%91%98%E5%B7%A5%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%9B%BD%E9%99%85%E5%8C%96.assets/1596764324799.png" alt="1596764324799"></a></p>
+<p><a href="22-SpringBoot-%E5%91%98%E5%B7%A5%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%9B%BD%E9%99%85%E5%8C%96.assets/1596764351283.png" data-lightbox="56eaf13f-cd07-4b12-b8fe-ac7dc4eebf77" data-title="1596764351283"><img src="22-SpringBoot-%E5%91%98%E5%B7%A5%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%9B%BD%E9%99%85%E5%8C%96.assets/1596764351283.png" alt="1596764351283"></a></p>
+<p><a href="22-SpringBoot-%E5%91%98%E5%B7%A5%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%9B%BD%E9%99%85%E5%8C%96.assets/1596764370279.png" data-lightbox="d37b6bf5-2f41-4d75-b9eb-8dfb20e5da21" data-title="1596764370279"><img src="22-SpringBoot-%E5%91%98%E5%B7%A5%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%9B%BD%E9%99%85%E5%8C%96.assets/1596764370279.png" alt="1596764370279"></a></p>
+</body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="21-SpringBoot-员工管理系统-首页实现.html" class="navigation navigation-prev " aria-label="Previous page: 首页实现">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="23-SpringBoot-员工管理系统-登录功能实现.html" class="navigation navigation-next " aria-label="Next page: 登录功能实现">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"国际化","level":"1.5.3","depth":2,"next":{"title":"登录功能实现","level":"1.5.4","depth":2,"path":"04_员工管理系统/23-SpringBoot-员工管理系统-登录功能实现.md","ref":"04_员工管理系统/23-SpringBoot-员工管理系统-登录功能实现.md","articles":[]},"previous":{"title":"首页实现","level":"1.5.2","depth":2,"path":"04_员工管理系统/21-SpringBoot-员工管理系统-首页实现.md","ref":"04_员工管理系统/21-SpringBoot-员工管理系统-首页实现.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hide-element","chapter-fold","expandable-chapters","favicon","lightbox","splitter","-lunr","pageview-count","ancre-navigation"],"pluginsConfig":{"chapter-fold":{},"splitter":{},"search":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/avator.png.icon.ico","bookmark":"./img/avator.png.icon.ico"},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"04_员工管理系统/22-SpringBoot-员工管理系统-国际化.md","mtime":"2020-08-11T11:24:12.601Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-23T12:21:59.784Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
