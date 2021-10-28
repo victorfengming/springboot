@@ -1,20 +1,24 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>给属性赋值的几种方式 · GitBook</title>
+        <title>给属性赋值的几种方式 · springboot</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="Victor <victorfengming@163.com>">
         
         
     
     <link rel="stylesheet" href="../gitbook/style.css">
 
     
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
@@ -41,11 +45,15 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-atom-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
                 
             
                 
@@ -105,7 +113,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
+    <input type="text" placeholder="输入并搜索" />
 </div>
 
             
@@ -116,7 +124,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="https://victorfengming.gitee.io/index/gitbook/" target="_blank" class="custom-link">文档索引页</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -823,7 +840,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -856,22 +873,26 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
+<div class="search-plus" id="book-search-results">
     <div class="search-noresults">
     
                                 <section class="normal markdown-section">
                                 
                                 <html><head></head><body><p>&#x7ED9;&#x5B9E;&#x4F53;&#x7C7B;&#x8D4B;&#x503C;</p>
-<p><a href="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596693304927.png" data-lightbox="31b621bc-b0b0-4216-9e0c-7f8b6c34e5e6" data-title="1596693304927"><img src="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596693304927.png" alt="1596693304927"></a></p>
-<p><a href="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596693537991.png" data-lightbox="89174e8d-5af0-48d6-96c8-72ac02c39b94" data-title="1596693537991"><img src="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596693537991.png" alt="1596693537991"></a></p>
+<p><a href="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596693304927.png" data-lightbox="81728f73-74d9-439f-83e0-abaf72eb32d0" data-title="1596693304927"><img src="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596693304927.png" alt="1596693304927"></a></p>
+<p><a href="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596693537991.png" data-lightbox="511e2b22-6689-48ca-871d-2bfa3312e4c3" data-title="1596693537991"><img src="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596693537991.png" alt="1596693537991"></a></p>
 <p>&#x6211;&#x4EEC;&#x7684;&#x7C7B;&#x548C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x76F4;&#x63A5;&#x5173;&#x8054;&#x7740;,&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7684;&#x662F;@ConfigurationProperties&#x7684;&#x65B9;&#x5F0F;,&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x662F;&#x4F7F;&#x7528;@Value</p>
-<p><a href="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596694622886.png" data-lightbox="007470fc-a22f-4167-ab47-23912e335432" data-title="1596694622886"><img src="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596694622886.png" alt="1596694622886"></a></p>
+<p><a href="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596694622886.png" data-lightbox="b84b31f4-4807-4060-b813-d5be90f85b61" data-title="1596694622886"><img src="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596694622886.png" alt="1596694622886"></a></p>
 <p>&#x8FD9;&#x4E2A;&#x4F7F;&#x7528;&#x8D77;&#x6765;&#x5E76;&#x4E0D;&#x53CB;&#x597D;! &#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E3A;&#x6BCF;&#x4E2A;&#x5C5E;&#x6027;&#x5355;&#x72EC;&#x6CE8;&#x89E3;&#x8D4B;&#x503C;,&#x6BD4;&#x8F83;&#x9EBB;&#x70E6;;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E2A;&#x529F;&#x80FD;&#x5BF9;&#x6BD4;&#x56FE;</p>
 <p>&#x7136;&#x800C;,&#x8FD9;&#x4E2A;yaml&#x5C31;&#x5389;&#x5BB3;&#x4E86;</p>
-<p><a href="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596694399040.png" data-lightbox="8b8c6b3f-54b8-4d3f-b623-b6d870569d2d" data-title="1596694399040"><img src="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596694399040.png" alt="1596694399040"></a></p>
-<p><a href="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596694658574.png" data-lightbox="ed1239dd-9a84-4c78-9f5d-e7f377dfebbf" data-title="1596694658574"><img src="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596694658574.png" alt="1596694658574"></a></p>
-<p><a href="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596696382967.png" data-lightbox="d34659dc-ed95-4e64-9d40-bdef7355a502" data-title="1596696382967"><img src="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596696382967.png" alt="1596696382967"></a></p>
-</body></html>
+<p><a href="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596694399040.png" data-lightbox="241f9aaa-fd88-44a0-b97c-ca8e04c2cb43" data-title="1596694399040"><img src="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596694399040.png" alt="1596694399040"></a></p>
+<p><a href="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596694658574.png" data-lightbox="74e4bf09-6852-460f-a4e7-f6b97a0b8da4" data-title="1596694658574"><img src="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596694658574.png" alt="1596694658574"></a></p>
+<p><a href="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596696382967.png" data-lightbox="2cac8566-8c7e-4504-912c-44945c8b670c" data-title="1596696382967"><img src="09-SpringBoot-%E7%BB%99%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.assets/1596696382967.png" alt="1596696382967"></a></p>
+<p></p><hr><div id="vcomments"></div><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script>new Valine({el: "#vcomments",appId: 'CHjATxRcQrXst8eJrdwX0vjz-gzGzoHsz',appKey: 'nWerbwV2WMAxOEmAMkJKvXzs',placeholder: 'Just go go',avatar: '',meta: undefined,pageSize: 10,lang: 'zh-CN',recordIP: false})</script> <p></p>
+<footer class="page-footer"><span class="copyright">victorfengming.gitee.io&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank">&#x7F72;&#x540D;4.0&#x56FD;&#x9645;(CC BY 4.0)&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6700;&#x540E;&#x66F4;&#x65B0;&#xFF1A;
+2020-08-06 19:11:16
+</span></footer></body></html>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
                                 </section>
                             
@@ -914,7 +935,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"给属性赋值的几种方式","level":"1.3.4","depth":2,"next":{"title":"JSR303校验","level":"1.3.5","depth":2,"path":"02_基础原理/10-SpringBoot-JSR303校验.md","ref":"02_基础原理/10-SpringBoot-JSR303校验.md","articles":[]},"previous":{"title":"yaml语法","level":"1.3.3","depth":2,"path":"02_基础原理/08-SpringBoot-yaml语法.md","ref":"02_基础原理/08-SpringBoot-yaml语法.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hide-element","chapter-fold","expandable-chapters","favicon","lightbox","splitter","-lunr","pageview-count","ancre-navigation"],"pluginsConfig":{"chapter-fold":{},"splitter":{},"search":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"./img/avator.png.icon.ico","bookmark":"./img/avator.png.icon.ico"},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"02_基础原理/09-SpringBoot-给属性赋值的几种方式.md","mtime":"2020-08-06T11:11:16.277Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-23T12:21:59.784Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"给属性赋值的几种方式","level":"1.3.4","depth":2,"next":{"title":"JSR303校验","level":"1.3.5","depth":2,"path":"02_基础原理/10-SpringBoot-JSR303校验.md","ref":"02_基础原理/10-SpringBoot-JSR303校验.md","articles":[]},"previous":{"title":"yaml语法","level":"1.3.3","depth":2,"path":"02_基础原理/08-SpringBoot-yaml语法.md","ref":"02_基础原理/08-SpringBoot-yaml语法.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","valine","hide-element","chapter-fold","expandable-chapters","favicon","lightbox","splitter","-lunr","pageview-count","ancre-navigation","-search","search-plus","-highlight","popup","prism","prism-themes","-sharing","sharing-plus","tbfed-pagefooter","toolbar-button"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"victorfengming.gitee.io，使用<a href='https://creativecommons.org/licenses/by/4.0/deed.zh'>署名4.0国际(CC BY 4.0)协议</a>发布","modify_label":"最后更新：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"toolbar-button":{"label":"下载PDF","url":"https://victorfengming.gitee.io/springboot/","icon":"fa-file-pdf-o"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"./img/avator.png.icon.ico","bookmark":"./img/avator.png.icon.ico"},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"prism-themes":{},"ancre-navigation":{"showLevel":true,"associatedWithSummary":true,"mode":"float","printLog":false,"multipleH1":true,"float":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","line","linkedin","messenger","pocket","qq","qzone","stumbleupon","twitter","viber","vk","weibo","whatsapp"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"valine":{"placeholder":"Just go go","avatar":"","pageSize":10,"lang":"zh-CN","recordIP":false,"appId":"CHjATxRcQrXst8eJrdwX0vjz-gzGzoHsz","appKey":"nWerbwV2WMAxOEmAMkJKvXzs"},"search-plus":{}},"theme":"default","author":"Victor <victorfengming@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"springboot","language":"zh-hans","links":{"sidebar":{"文档索引页":"https://victorfengming.gitee.io/index/gitbook/"}},"gitbook":"3.2.3","description":"springboot,快速集成"},"file":{"path":"02_基础原理/09-SpringBoot-给属性赋值的几种方式.md","mtime":"2020-08-06T11:11:16.277Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-28T03:10:33.397Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -922,6 +943,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
@@ -948,15 +973,19 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toolbar-button/plugin.js"></script>
         
     
         
